@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-btn {
+    @apply p-6 text-white text-2xl hover:bg-sky-400;
+  }
+}
