@@ -1,7 +1,7 @@
-<form action="/user/login" method="post">
-  <h1>Log in</h1>
-  <input type="text" name="username" placeholder="username" required>
-  <input type="password" name="password" placeholder="password" required>
-  <a href="/user/forgot">Forgot your password?</a>
-  <button type="submit">Log in</button>
+<form action="/user/login" method="post" class="flex flex-col items-center">
+  <h1 class="text-4xl pt-24 pb-7 font-medium">Log In</h1>
+  <input class="primary-text-input" type="text" name="username" placeholder="username" required>
+  <input class="primary-text-input" type="password" name="password" placeholder="password" required>
+  <a class="text-blue-600 py-3" href="/user/forgot">Forgot your password?</a>
+  <button class="primary-btn text-xl mt-4" type="submit">Log in</button>
 </form>

@@ -3,7 +3,7 @@
 <div class="flex flex-none justify-center">
   <ul>
     {{#if currentUser}}
-      <li><a href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+      <li><a class="primary-btn" href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
     {{else}}
       <li><a class="primary-btn" href="/user/signup">Get Started</a></li>
     {{/if}}
