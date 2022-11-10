@@ -10,9 +10,12 @@
     @apply hover:bg-sky-400 p-4;
   }
   .primary-btn {
-    @apply bg-blue-400 text-white p-4 hover:bg-red-400 text-2xl font-bold rounded;
+    @apply bg-blue-400 text-white p-4 hover:bg-red-400 font-bold rounded;
   }
   .primary-text-input {
     @apply input input-bordered input-primary w-full max-w-xs my-6;
+  }
+  .primary-h1{
+    @apply text-4xl pt-24 pb-7 font-medium;
   }
 }
