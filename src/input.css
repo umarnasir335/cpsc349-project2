@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @layer components {
   .nav-btn {
     @apply text-white text-xl font-medium;
@@ -12,10 +13,22 @@
   .primary-btn {
     @apply bg-blue-400 text-white p-4 hover:bg-red-400 font-bold rounded;
   }
+  .primary-btn-course {
+    @apply bg-blue-600 text-white p-2 hover:bg-red-200 font-bold rounded;
+  }
+  .primary-btn-green {
+    @apply btn-accent text-white p-4 hover:bg-red-400 font-bold rounded;
+  }
   .primary-text-input {
     @apply input input-bordered input-primary w-full max-w-xs my-6;
   }
   .primary-h1{
     @apply text-4xl pt-24 pb-7 font-medium;
   }
+ 
 }
+
+
+
+
+

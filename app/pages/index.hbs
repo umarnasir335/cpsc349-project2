@@ -4,6 +4,7 @@
   <ul>
     {{#if currentUser}}
       <li><a class="primary-btn text-2xl" href="/{{currentUser.details.username}}">Go to your dashboard</a></li>
+      
     {{else}}
       <li><a class="primary-btn text-2xl" href="/user/signup">Get Started</a></li>
     {{/if}}
