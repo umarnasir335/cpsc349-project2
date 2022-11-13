@@ -1,53 +1,51 @@
-<div class="flex justify-center border-solid rounded-md border-2 border-green-700 border-8 text-4xl pt-12 pb-7 ml-20 mr-20 mt-4 font-medium">
   <div 
-    class="text-5xl"
+    class="text-5xl text-center pt-12 pb-7 ml-20 mr-20 mt-4 font-medium"
     object
     key:board-heading="@innerText"
-    default:board-heading="My Projects"
+    default:board-heading="My School Planner"
     edit:board-heading:without-remove
   >{{boardHeading}}</div>
-</div>
 <div class="flex justify-center mt-4 mb-2">
 <button 
-    class="bg-blue-400 text-white p-2 hover:bg-red-400 font-bold rounded"
+    class="primary-btn text-base my-4"
     new:stack
   >Add Subject</button>
 </div>
 <div class=".flex-grow">
   <div 
-    class="border-solid border-2 border-gray-700 border-8 text-4xl pt-4 pb-7 font-medium"
+    class="flex flex-col items-center space-y-9"
     array
     key="stacks"
     sortable="stacks"
   >
     {{#for stack in stacks}}
       <div 
-        class="border-solid border-2 border-gray-400 border-8 text-4xl pt-2 pb-4 font-medium"
+        class="relative card w-3/5 bg-base-100 shadow-2xl bg-blue-50 p-4"
         object
         key:stack-heading="@search"
         default:stack-heading="A Project"
       >
-        <div class="">
+        <div>
           <p 
-            class="border-solid border-2 border-red-400 border-8 text-4xl pt-8 pb-7 font-medium"
+            class="card-title text-4xl"
             target:stack-heading="@innerText"
             edit:stack-heading
           >{{default stack.stackHeading "New Subject"}}</p>
           <button 
-            class="bg-blue-400 text-white p-1 hover:bg-red-400 font-bold rounded ml-2 mt-2"
+            class="primary-btn p-1 font-bold ml-2 mt-2 absolute top-4 right-4 "
             new:card
           >New card
           </button>
         </div>
         <div 
-          class="border-solid border-2 border-yellow-400"
+          class="mt-4"
           key="cards"
           array
           sortable="cards"
         >
           {{#for card in stack.cards}}
             <div 
-              class="border-solid border-2 border-gray-700 border-8 text-2xl pt-2 pb-1 font-medium"
+              class="text-2xl pt-2 pb-1 font-medium mb-4"
               object
               key:card-text="@search"
               edit:card-text
